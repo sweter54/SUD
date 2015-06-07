@@ -1,9 +1,0 @@
-#include "mob.hpp"
-
-Fight::Fight
-{
-	menu();
-
-
-
-}
