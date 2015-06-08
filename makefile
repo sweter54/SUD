@@ -1,4 +1,4 @@
 all:
 	clear
-	g++ *.cpp -std=c++11 -o lab4
-	./lab4
+	g++ *.cpp -std=c++11 -o PANDA3
+	./PANDA3
