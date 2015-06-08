@@ -1,10 +1,13 @@
-#pragma once
+#ifndef ITEM_HPP
+#define ITEM_HPP
 #include <iostream>
 
 
 class Item
 {
-	public:
+	friend class Inventory;
+
+private:
 
 		std::string description;
 		std::string name;
@@ -15,8 +18,9 @@ class Item
 
 		Item(std::string, std::string);
 		~Item();
-		 Item();
+
 
 
 
 };
+#endif
