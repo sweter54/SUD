@@ -53,7 +53,7 @@ int main()
 		{
 
 
-			printf("1. aby zobaczyc ekwipunek.\n");
+			printf("\n1. aby zobaczyc ekwipunek.\n");
 			printf("2. aby kontynuwac podroz.\n");
 			printf("3. aby zobaczyc statystyki postaci\n");
 			printf("7. aby wyjsc z gry\n");
@@ -103,12 +103,18 @@ int main()
 					break;
 
 				case 2:
-				while(loch1.mobs.size())
+				while((loch1.SizeofDng()>0)&&(Player.ShowHP()>0))
 				{
 					int i=1;
 					Fight(&Player,loch1.mobs[1]).run();
-					loch1.mobs.erase(loch1.mobs.begin());
+					loch1.rmv_mobs();
 					i++;
+					if(Player.ShowHP()<=0)
+					{
+						printf("\nZginales\n");
+						Player.HPregen();
+
+					}
 				}
 
 					break;
@@ -124,9 +130,9 @@ int main()
 
 			/*
 
-			Player.inventory.add_weapon(12,12,"s","Deska Zagladyyyyyy...");
-			Player.inventory.add_weapon(12,12,"s","Wielki Miecz");
-			Player.inventory.add_weapon(12,12,"s","Zyletka");
+			Player.inventory.add_weapon(12,12,"s","XX052");
+			Player.inventory.add_weapon(12,12,"s","XX053");
+			Player.inventory.add_weapon(12,12,"s"," XX054");
 			Player.inventory.add_armour("Zbroja","Pancernik",12,Armour::Slot::torso);
 			Player.equipWeapon(Player.inventory.weapon[123]);
 
