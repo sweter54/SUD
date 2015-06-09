@@ -54,7 +54,7 @@ class Champ
 		int rtnLVL();
 		int ShowHP();
 		int mExp();
-		
+
 		void rtnATC();
 		void returnDeff();
 		void returnHP();
@@ -62,7 +62,7 @@ class Champ
 		void MageCr();
 		void RogueCr();
 		void WarriorCr();
-
+		void HPregen();
 
 		void equipWeapon(Weapon* weapon);
 		void equipArmour(Armour* armour);
