@@ -124,9 +124,9 @@ int main()
 
 			/*
 
-			Player.inventory.add_weapon(12,12,"s","Palka Zagladyyyyyy...");
-			Player.inventory.add_weapon(12,12,"s","Wielki Miecz Wojownika Teczy");
-			Player.inventory.add_weapon(12,12,"s","Grodzka Zyleta");
+			Player.inventory.add_weapon(12,12,"s","Deska Zagladyyyyyy...");
+			Player.inventory.add_weapon(12,12,"s","Wielki Miecz");
+			Player.inventory.add_weapon(12,12,"s","Zyletka");
 			Player.inventory.add_armour("Zbroja","Pancernik",12,Armour::Slot::torso);
 			Player.equipWeapon(Player.inventory.weapon[123]);
 
