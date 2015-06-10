@@ -7,5 +7,3 @@ description=b;
 name=a;
 
 }
-Item::Item()
-{}

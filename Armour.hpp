@@ -17,6 +17,6 @@ class Armour:public Item
 	Slot slot;
 
 	Armour(std::string,std::string,int,Armour::Slot);
-	Armour();
+
 	~Armour();
 };

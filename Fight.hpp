@@ -11,7 +11,7 @@ class Mobs;
 class Fight
 {
 
-	friend bool operator>=(const Mobs&,const Champ&);
+	friend bool operator==(Mobs& b,Champ& c);
 
 	private:
 
@@ -26,10 +26,12 @@ class Fight
 
 		bool isActive();
 
+		void acquireReward(Champ& b,Mobs& d);
 		void run();
 		void Turn();
 		void attack();
 		void mobAttack();
+
 
 };
 #endif

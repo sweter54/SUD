@@ -7,6 +7,7 @@ class Mobs
 	friend class Fight;
 	friend class Items;
 	friend std::ostream& operator<<(std::ostream& out,const Mobs& s);
+	
 
 	private:
 

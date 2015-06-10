@@ -15,7 +15,7 @@ private:
 
 
 
-public:
+  public:
 
   std::vector<Mobs*> mobs;
 
@@ -25,6 +25,8 @@ public:
   void add_mobs(std::string s,std::string s2,int a,int b,int c,int d,int e);
   void rmv_mobs();
   void rtName();
+  void destroy();
+
 
   int SizeofDng();
 

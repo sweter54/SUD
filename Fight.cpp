@@ -81,8 +81,25 @@ void Fight::run()
 		printf("Wywolano walke");
 		if(c->HP<=0)
 		{
+
+
 			d->exp=c->LVL*50+20;
+
 		}
 	}
 	return;
+}
+
+bool operator==(Mobs& b,Champ& c)
+{
+	return((c.rtnLVL()==b.rtLVL())&&(c.ShowHP()<b.ShowHP()));
+}
+
+void Fight::acquireReward(Champ& q,Mobs& w)
+{
+	if(*c==*d)
+	{
+		d->exp+=250;
+	}
+	q.exp=d->exp;
 }

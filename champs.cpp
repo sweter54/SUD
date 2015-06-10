@@ -150,3 +150,8 @@ void Champ::rtnATC()
 {
 	attack=str*6;
 }
+
+void Champ::HPregen()
+{
+	HP=30*stm;
+}
