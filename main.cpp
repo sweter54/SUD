@@ -47,6 +47,13 @@ int main()
 		cin>>clas;
 
 		Champ Player(name,clas);
+		
+		Player.inventory.add_weapon(12,12,"s","XX052");
+		Player.inventory.add_weapon(12,12,"s","XX053");
+		Player.inventory.add_weapon(12,12,"s"," XX054");
+		Player.inventory.add_armour("Zbroja","Pancernik",12,Armour::Slot::torso);
+		Player.inventory.add_item("ABCD","FGH");
+		
 		cout<<"Pomyslnie utworzono postac."<<Player;
 		cout<<"Wybierz co chcesz zrobic"<<endl;
 		do
